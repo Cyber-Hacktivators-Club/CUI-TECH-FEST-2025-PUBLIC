@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+  <user>
+    <username>mohib</username>
+    <password>alicepwd</password>
+  </user>
+  <user>
+    <username>circuitx</username>
+    <password>bobpwd</password>
+  </user>
+  <user>
+    <username>admin</username>
+    <password>supersecret</password>
+    <flag>CHC{NIGGAFLAG}</flag>
+  </user>
+</users>

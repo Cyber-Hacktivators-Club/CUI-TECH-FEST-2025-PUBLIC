@@ -1,0 +1,21 @@
+name: "Pawde's Vault"
+author: "Aerys"
+category: Rev
+description: "Detective levi, our trusted client fang was targeted by the infamous pawde once again, Pawde broke into his account and stole 170000 from him. Poor guy is so shocked that he seeing a psychotherapist. Our investigation led to us accessing pawde's laptop and gaining access to this file and some account details. I believe this is how he handles transactions. But be careful\nWe need to return Fang's money before he becomes homeless! \n\n__Author__: Aerys"
+value: 500 (Constant bcz we will use linear decay)
+type: file zip
+
+extra:
+  initial: 500
+  decay: 100
+  minimum: 50
+  command: ""
+  volumes: ""
+  tags: "medium"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{w1r3_tr4nsf3r_t0_f4ng_c0mpl3t3}", data: "case_sensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/pawde_vault.zip

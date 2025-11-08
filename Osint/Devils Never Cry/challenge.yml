@@ -1,0 +1,17 @@
+name: "Devils Never Cry"
+author: "leviii & Aerys"
+category: OSINT
+description: "The blood of Sparda flows through generations of demon hunters. Prove yourself worthy by unraveling the chronicles of the Sons of Sparda—only those who truly know the depths of the underworld shall claim their prize.\n⚠️ DISCLAIMER: ZOOM OUT your terminal/CMD to TINY letters before running this challenge. Full-screen and zoom way out for maximum impact—trust us, the payoff is worth it!\n\n__Author__: leviii & Aerys"
+value: 500
+type: container
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: ctf_devils_never_cry:latest
+  port: 8080
+  command: ""
+  volumes: ""
+  connection_type: "tcp"
+

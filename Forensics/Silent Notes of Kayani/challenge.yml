@@ -1,0 +1,21 @@
+name: "Silent Notes of Kayani"
+author: "leviii"
+category: Forensics
+description: "Kayani swore his notes were gone, erased without a sound. But Aerys could still feel Pawde’s presence between the lines. \n\n__Author__: leviii"
+value: 500 (Constant bcz we will use linear decay)
+type: file dat
+
+extra:
+  initial: 1000
+  decay: 100
+  minimum: 50
+  command: ""
+  volumes: ""
+  tags: "easy"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{c0ngr4ts_y0u_f0und_my_n0t3s}", data: "case_insensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/Users.zip

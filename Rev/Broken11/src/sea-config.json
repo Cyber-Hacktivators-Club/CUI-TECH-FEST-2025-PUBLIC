@@ -1,0 +1,12 @@
+{
+  "main": "challenge.js",
+  "output": "sea-prep.blob",
+  "assets": {
+    "secret.txt": "secret.txt"
+  },
+  "useCodeCache": true,
+  "useSnapshot": false,
+  "execArgv": ["--no-warnings"],
+  "disableExperimentalSEAWarning": true,
+  "execArgvExtension": "cli"
+}

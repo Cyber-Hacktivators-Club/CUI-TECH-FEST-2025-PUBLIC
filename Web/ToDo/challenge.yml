@@ -1,0 +1,20 @@
+name: "ToDO"
+author: "React Guy"
+category: Web
+description: "I have made an ToDo app for my company, Surely, its secure right?\n> __NOTE:__ It might take upto 2 minutes for the container to start.\n\n__Author__: React Guy"
+value: 500 
+type: container
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: "ctf_todo:latest"
+  port: 8080
+  command: ""
+  volumes: ""
+  connection_type: tcp
+
+image: ./src/
+state: hidden
+version: "0.1"

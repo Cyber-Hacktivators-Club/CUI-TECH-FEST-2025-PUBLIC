@@ -1,0 +1,21 @@
+name: "Pawde's Grief: The Cat's Last Meow"
+author: "leviii"
+category: Misc
+description: "Pawde's cat died and he's been acting weird ever since. He keeps muttering about 'peace' and 'screaming' while obsessively organizing random files. Figure out what's going on before he loses it completely. \n\n__Author__: leviii"
+value: 500 (Constant bcz we will use linear decay)
+type: file dat
+
+extra:
+  initial: 1000
+  decay: 100
+  minimum: 50
+  command: ""
+  volumes: ""
+  tags: "medium"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{c4t_0f_p4wda_g0ne_2_m33wheaven}", data: "case_insensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/suiii.zip

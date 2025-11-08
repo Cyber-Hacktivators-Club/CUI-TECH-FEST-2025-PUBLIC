@@ -1,0 +1,21 @@
+name: "Pawde's Resume"
+author: "leviii"
+category: Forensics
+description: "Kayani from HR opened a resume from \"Pawde\" and immediately regretted it. Now weird scripts are running and Kayani's panicking. We grabbed forensics before IT wipes the machine. Find the payload before Kayani gets fired. \n\n__Author__: leviii"
+value: 500 (Constant bcz we will use linear decay)
+type: file dat
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  command: ""
+  volumes: ""
+  tags: "easy"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{r0mc0m_t3l3c0m!!}", data: "case_insensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/challenge.zip

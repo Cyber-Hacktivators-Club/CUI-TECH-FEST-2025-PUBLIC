@@ -1,0 +1,26 @@
+name: "Miscellaneous OSINT"
+author: "The_Blue_Serpent"
+category: "OSINT"
+description: |
+  I had been tracking a cybercriminal for several months when, one night, I finally got the chance to capture him. But everything went wrong—he turned the tables and took me captive instead. 
+  During my confinement, I once caught a glimpse of his Instagram profile: something blue, serpent-like. The image stuck in my mind, though the details are hazy.
+
+  Two days later, I managed to escape, taking with me two URLs that could be key to uncovering his identity. I didn’t fully understand their significance at first, which is why I need your help now—to solve this case once and for all and bring the serpent to justice.
+
+  URL 1: https://tinyurl.com/zav45t45
+  URL 2: https://tinyurl.com/yb8vnjmw
+
+  Unmask the serpent. End this hunt.
+
+value: 500
+type: "container"
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: ctf_miscallenous_osint:latest
+  port: 8080
+  command: ""
+  volumes: ""
+  connection_type: "tcp"

@@ -1,0 +1,26 @@
+name: "Spray OR Japanese SHUI"
+author: "Unknown Guy"
+category: Pwn
+description: "I love cpython because its safe.\n> __NOTE:__ It might take upto 2 minutes for the container to start.\n\n__Author__: Unknown Guy"
+value: 500 
+type: container
+
+tags:
+    - Pwn
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+    image: fengshui:latest
+    port: 8089
+    command: ""
+    volumes: ""
+    connection_type: tcp
+image: ./src/
+
+files:
+   - dist/chal.py
+   - dist/libchal.so
+   - dist/Makefile
+state: hidden
+version: "0.1"

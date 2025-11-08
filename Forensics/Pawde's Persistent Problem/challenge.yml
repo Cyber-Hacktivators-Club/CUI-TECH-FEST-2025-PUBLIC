@@ -1,0 +1,21 @@
+name: "Pawde's Persistent Problem"
+author: "leviii"
+category: Forensics
+description: "Attacker 'Pawde' left traces on a compromised system before we kicked them out. Word on the street is they never change their playbook—find what they left behind. \n\n__Author__: leviii"
+value: 500 (Constant bcz we will use linear decay)
+type: file dat
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  command: ""
+  volumes: ""
+  tags: "easy"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{P4wD3_T1547_Hybrid_HKCU_Run_HKLM_Svc_T1053_Scheduled}", data: "case_insensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/C.zip

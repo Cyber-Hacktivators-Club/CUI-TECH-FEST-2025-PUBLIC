@@ -1,0 +1,21 @@
+name: "Toaster"
+author: "leviii"
+category: Reverse Engineering
+description: "Pawde found something interesting on his IOT recon, a Toaster - \nFang: Hey alexa, crisp up my bread *Crisping Sounds* NOOOO why u burning it, Pawde NOOOOOOOOOOOOOOOOOOOO!!!!!!!!! \n\n__Author__: leviii"
+value: 500 (Constant bcz we will use linear decay)
+type: file dat
+
+extra:
+  initial: 1000
+  decay: 100
+  minimum: 50
+  command: ""
+  volumes: ""
+  tags: "easy"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{p4wd3_infiltr4t3d_br3ak_th3_flow}", data: "case_insensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/Toaster.exe

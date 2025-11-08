@@ -1,0 +1,21 @@
+name: "The Mythical Maze of Pawde"
+author: "Aerys"
+category: Rev
+description: "Diving into the secrets of hacker (Pawde G), Leviii found a particular file, with branching paths and no respect for the users time, can you uncover the secrets hidden? \n\n__Author__: Aerys"
+value: 500 (Constant bcz we will use linear decay)
+type: file elf
+
+extra:
+  initial: 500
+  decay: 100
+  minimum: 50
+  command: ""
+  volumes: ""
+  tags: "medium"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{Th3_C0rrectt_p4th_shall_giv_y0u_th3_fl4g}", data: "case_sensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/maze

@@ -1,0 +1,39 @@
+<!-- views/todo.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+<title>ToDo List</title>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h1 class="text-xl font-semibold text-gray-800 my-6">ToDo List</h1>
+        <!-- Search Form -->
+        <form action="/" method="GET" class="mb-4">
+            <input type="text" name="term" placeholder="Search tasks..." class="shadow appearance-none border rounded py-2 px-3 text-grey-darker">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Search
+            </button>
+        </form>
+        <div class="bg-white shadow-md rounded my-6">
+            <table class="text-left w-full border-collapse">
+                <!-- Table Header -->
+                <thead>
+                    <tr>
+                        <th class="py-4 px-6 bg-grey-lightest font-bold uppercase text-sm text-grey-dark border-b border-grey-light">Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% tasks.forEach(function(task) { %>
+                        <tr class="hover:bg-grey-lighter">
+                            <td class="py-4 px-6 border-b border-grey-light"><%= task.task_name %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

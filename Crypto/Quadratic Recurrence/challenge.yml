@@ -1,0 +1,23 @@
+name: "Quadratic Recurrence"
+author: "Unknown_Guy"
+category: "Crypto"
+description: "I hate Quadratic equation from start . Math is cruel.\n\n__Author__: Unknown_Guy"
+value: 500 
+type: container 
+
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: "ctf_quadratic_recurrence:latest"
+  port: 8080
+  command: ""
+  volumes: ""
+  connection_type: tcp
+
+image: ./src/
+
+state: hidden
+version: "1.0"
+

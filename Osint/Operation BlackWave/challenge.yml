@@ -1,0 +1,48 @@
+name: "Operation BLACKWAVE"
+author: "The_Blue_Serpent"
+category: "OSINT"
+description: |
+  OPERATION BLACKWAVE
+
+  Hey investigators, curiosity addicts, and people who enjoy mild chaos,
+
+  Cyber Hacktivators Club has been catalogued, boxed, and quietly moved.
+  An archive has been taken under a single label and I’m the one holding it.
+  If you want to follow the breadcrumbs, that’s your job — not mine.
+
+  What was taken:
+    • Archive ID: BLACKWAVE-2025-09-21
+    • What’s inside: project manifests, chat backups, drafts, and audit traces
+    • Why it matters: enough to trace who changed what, when, and why
+
+  Deadline:
+    • 17:00 PKT, 5 November 2025
+
+  Demands (read carefully; this is the fun part):
+    • Run the attached challenge EXE. It contains a series of puzzles/questions.
+    • Work it out yourself — the EXE will hand you the flag when you succeed.
+    • Do not ask for flags, keys, shortcuts, or pity. This is self-service OSINT.
+    • If you enjoy theatrics, bring a strong cup of coffee and a spreadsheet.
+
+  Consequences (if you ignore the fun and decide not to play):
+    • The archive may be released in public slices. People who care about receipts will pay attention.
+
+  This note is the scenario brief. Everything you need to start is in this text and in the EXE attached to the challenge. No attachments are embedded here — the EXE is your playground.
+
+  metadata: proof-id=RWwzY1QxdmU1dDByTQ==
+
+  — End of notice
+
+value: 500
+type: "container"
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: ctf_operation_blackwave:latest
+  port: 8080
+  command: ""
+  volumes: ""
+  connection_type: "tcp"
+

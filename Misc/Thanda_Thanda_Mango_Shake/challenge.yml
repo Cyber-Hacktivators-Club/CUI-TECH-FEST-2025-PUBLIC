@@ -1,0 +1,21 @@
+name: "Thanda Thanda Mango Shake"
+author: "Aerys"
+category: Misc
+description: "Attacker pawde is quite based, he significantly loves thanda thanda mango shake, doesn't like gannay ka juice, NOT IN THE LEAST!!!!\n\n__Author__: Aerys"
+value: 500 (Constant bcz we will use linear decay)
+type: file png
+
+extra:
+  initial: 500
+  decay: 100
+  minimum: 50
+  command: ""
+  volumes: ""
+  tags: "easy"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{G4nn3y_k3_ju1ce_k1_base62}", data: "case_sensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/thanda_thanda_mango_shaaake.png

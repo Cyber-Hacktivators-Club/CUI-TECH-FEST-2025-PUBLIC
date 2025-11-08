@@ -1,0 +1,21 @@
+name: "Pawde's Encrypted Drop"
+author: "leviii"
+category: Forensics
+description: "Pawde slipped into the network and left a locked parcel on a remote host — we recorded the session. Analyze the packet capture for the authentication handshake and the encrypted transfer; recover Pawde's parcel. \n\n__Author__: leviii"
+value: 500 (Constant bcz we will use linear decay)
+type: file dat
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  command: ""
+  volumes: ""
+  tags: "easy"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{p4wd3_3ncryp73d_dr0p}", data: "case_insensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/challenge.pcap

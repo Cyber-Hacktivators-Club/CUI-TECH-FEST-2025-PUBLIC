@@ -1,0 +1,21 @@
+name: "Simple-MBA"
+author: "Unknown_Guy"
+category: "Crypto"
+description: "People say BBA is hard , I bet MBA is harder, sikes.\nNOTE: When found a solution add 'CHC{' to the start and '}' at end to make the valid flag\n\n__Author__: Unknown_Guy"
+value: 500 (Constant bcz we will use linear decay)
+type: file 
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  command: ""
+  volumes: ""
+  tags: "hard"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{g4mb4_s0lv3r}", data: "case_sensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/Equations.txt

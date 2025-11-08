@@ -1,0 +1,21 @@
+name: "Broken11"
+author: "Unknown_Guy"
+category: "Rev"
+description: "I accidently made a broken challenge, but nonetheless you have to solve it. Only a true reverse guy will get it done right\nNode v23.11.1 is used for this challenge\n\n__Author__: Unknown_Guy"
+value: 500 (Constant bcz we will use linear decay)
+type: file exe 
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  command: ""
+  volumes: ""
+  tags: "hard"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{Fin4lly_P_c0d3_0r_c0d3_c4v3_d0n3}", data: "case_sensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/challenge2.exe

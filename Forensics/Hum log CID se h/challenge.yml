@@ -1,0 +1,21 @@
+name: "Hum log CID se h"
+author: "leviii & Aerys"
+category: Forensics
+description: "Attacker Pawde bohot chalaak hai, pretend kr rha tha ke woh CID hai, usne Fang ko malicious file send karke uski important file cheer di \n\n__Author__: leviii & Aerys"
+value: 500 (Constant bcz we will use linear decay)
+type: file dat
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  command: ""
+  volumes: ""
+  tags: "hard"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{m3mory_s3_D0c_n1kal_k3_an4lyz3_k4rn4_s33kh_liy3_h0}", data: "case_insensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/memdump.zip

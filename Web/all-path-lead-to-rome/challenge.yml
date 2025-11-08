@@ -1,0 +1,17 @@
+name: "ALL PATHS LEAD TO ROME"
+author: "CIRCUITx"
+category: "Web"
+description: "You must focus on the paths\n\n__Author__: CIRCUITx" 
+
+value: 500
+type: "container"
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: "ctf_all_paths_lead_to_rome:latest"
+  port: 8080
+  command: ""
+  volumes: ""
+  connection_type: web

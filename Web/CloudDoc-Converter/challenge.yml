@@ -1,0 +1,34 @@
+name: "CloudDoc Converter"
+author: "ab_fatir"
+category: "Web"
+description: |
+  A microservice-based document conversion platform running in our cloud infrastructure.
+  
+  Our service converts web pages to PDF format for archival purposes. The application
+  is designed with security in mind and deployed across multiple isolated services.
+  
+  Your task is to identify and exploit potential vulnerabilities in our request handling
+  to access restricted internal resources.
+  
+  Challenge by Ab_Fatir for CHC CTF
+
+tags:
+  - "web"
+  - "ssrf"
+  
+value: 500
+type: "container"
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: "ctf_clouddoc_converter:latest"
+  port: 3000
+  command: ""
+  volumes: ""
+  connection_type: web
+
+state: "hidden"
+
+version: "0.1"

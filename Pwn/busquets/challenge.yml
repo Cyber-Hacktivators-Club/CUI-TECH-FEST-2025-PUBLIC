@@ -1,0 +1,23 @@
+name: "busquets"
+author: "Gus Fring"
+category: "Pwn"
+description: "To be updated !!\n\n__Author__: Gus Fring"
+value: 500
+type: "container"
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: "ctf_pwn_busquets:latest"
+  port: 8082
+  command: ""
+  volumes: ""
+  connection_type: tcp
+
+image: ./src/
+files:
+  - "dist/busquets"
+
+state: hidden
+version: "0.1"

@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+COPY storage.py .
+RUN pip install --no-cache-dir Flask==3.0.0
+
+RUN useradd -m -u 1000 appuser && chown -R appuser:appuser /app
+
+# Create flag file with environment variable or default
+ARG FLAG="CHC{default_flag_not_configured}"
+RUN echo "${FLAG}" > /flag.txt && chmod 644 /flag.txt
+
+USER appuser
+
+EXPOSE 8080
+CMD ["python", "storage.py"]

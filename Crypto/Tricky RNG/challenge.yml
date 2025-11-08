@@ -1,0 +1,22 @@
+name: "Tricky RNG"
+author: "leviii"
+category: "Crypto"
+description: "Connect to the instance to get the description \n\n__Author__: leviii"
+
+value: 500 
+type: container
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: "ctf_tricky_rng:latest"
+  port: 8080
+  command: ""
+  volumes: ""
+  connection_type: tcp
+
+image: ./src/
+
+state: hidden
+version: "1.0"

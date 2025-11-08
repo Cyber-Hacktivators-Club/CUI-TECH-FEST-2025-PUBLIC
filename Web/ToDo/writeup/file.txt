@@ -1,0 +1,3 @@
+HINT: http://localhost:8000/?term=%27+OR+1%3D%271
+
+http://localhost:8000/?term=%27%20UNION%20SELECT%20description%20as%20task_name%20FROM%20tasks%20--%20

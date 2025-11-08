@@ -1,0 +1,21 @@
+name: "The Pulse of Pawde"
+author: "leviii"
+category: Forensics
+description: "Detective Aerys stumbles upon a peculiar network capture left by Attacker Pawde. Something ordinary hides an extraordinary secret — can you uncover what he buried inside? \n\n__Author__: leviii"
+value: 500 (Constant bcz we will use linear decay)
+type: file dat
+
+extra:
+  initial: 1000
+  decay: 100
+  minimum: 50
+  command: ""
+  volumes: ""
+  tags: "hard"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{t1m1ing_d3kh_k3_flag_n1k4l_l3t3_ho_pwn3r}", data: "case_insensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/challenge.pcapng

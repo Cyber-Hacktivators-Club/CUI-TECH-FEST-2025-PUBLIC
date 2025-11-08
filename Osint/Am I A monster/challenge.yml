@@ -1,0 +1,27 @@
+name: "Am I The First Monster??"
+author: "The_Blue_Serpent"
+category: "OSINT"
+description: |
+  Something weird is happening in the server.
+  Last night, someone joined the server—no one knows who is he , no logs, no roles, no messages. 
+  Though some say he was one of the very first members to ever join… and never once spoke,Still able to transfer data through words somehow:
+
+    "Can you see me? Even though your eyes are getting worse and worse, if I'm this close, you should be able to see me.
+      Can you see what's reflected in my eyes? I was born in a town that was straight out of a fairytale. Many people died.
+      I held the hand of my other half and walked. There were only two like us. We didn't have names...."
+
+      "0AdAOACBDAHBvBvAXAVBsAmARA5ABBqBXAMBJAFAzAgBoAuBhAXBAAAAAAAAAA5="
+
+
+value: 500
+type: "container"
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: ctf_am_i_a_monster:latest
+  port: 8080
+  command: ""
+  volumes: ""
+  connection_type: "tcp"

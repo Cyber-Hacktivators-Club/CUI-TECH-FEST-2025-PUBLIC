@@ -1,0 +1,21 @@
+name: "Attackers Broadcast"
+author: "leviii"
+category: Cryptography
+description: "Attacker Aerys intercepted three RSA ciphertexts of the same message with slightly different padding from Attacker Pawde. Can you help Aerys recover the flag using related message attacks? \n\n__Author__: leviii"
+value: 500
+type: container
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  image: "ctf_pawde_broadcast:latest"
+  port: 8080
+  command: ""
+  volumes: ""
+  connection_type: tcp
+
+image: ./src/
+
+state: hidden
+version: "0.1"

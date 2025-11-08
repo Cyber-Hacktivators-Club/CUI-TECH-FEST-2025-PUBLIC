@@ -1,0 +1,21 @@
+name: "Fragmented Footprints"
+author: "leviii"
+category: Forensics
+description: "While downloading system updates, attacker Pawde breached my machine — now only fragments of the MFT remain. Detective Aerys must uncover what truly happened from the ruins. \n\n__Author__: leviii"
+value: 500 (Constant bcz we will use linear decay)
+type: file dat
+
+extra:
+  initial: 500
+  decay: 20
+  minimum: 100
+  command: ""
+  volumes: ""
+  tags: "easy"
+flags:
+  - { type: "static", ? // Regex is must
+        content
+      : "CHC{MFT$_st0r3s!_m0r3#th@n_y0u_th!nk}", data: "case_insensitive", // all flags must be case insensitive unless needed }
+
+files:
+  - dist/MFT.zip

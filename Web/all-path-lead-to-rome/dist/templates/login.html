@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login- Challenge</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="card">
+      <h1>Welcome</h1>
+      <p class="muted">Legacy auth service — login to continue</p>
+      <form method="POST" action="/">
+        <label>Username</label>
+        <input name="username" placeholder="username" required>
+        <label>Password</label>
+        <input name="password" type="password" placeholder="password" required>
+        <button type="submit">Sign in</button>
+      </form>
+      <p class="hint">Tip: try special characters like <code>/</code></p>
+    </div>
+  </body>
+</html>
